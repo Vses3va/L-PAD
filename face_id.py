@@ -73,14 +73,13 @@ class FaceIDSystem:
             try:
                 shutil.rmtree(path)
                 print(f"[OK] Папка {name} удалена.")
-                self.train() # Переобучаем сразу
+                self.train()
                 return True
             except Exception as e:
                 print(f"[ERR] Ошибка удаления: {e}")
         return False
 
     def recognize(self, frame, bbox):
-        # ЗАЩИТА ОТ ОШИБКИ
         if bbox is None: return "Unknown", 0
         if not self.trained: return "Unknown", 0
         
@@ -97,4 +96,5 @@ class FaceIDSystem:
             
             name = self.names.get(id_, "Unknown")
             return name, score
+
         except: return "Error", 0
