@@ -21,7 +21,7 @@
 
 1. Убедитесь, что у вас установлен **Python 3.10**.
 
-2. Откройте терминал в папке проекта и выполните команду:
+2. Откройте терминал в папке проекта и установите ```pyinstaller```:
 
 ```bash
 pip install pyinstaller
@@ -41,5 +41,6 @@ pyinstaller --noconfirm --onefile --windowed --name "L-PAD_Security" --add-data 
 ```bash
 pip install -r requirements.txt
 ```
+
 
 
