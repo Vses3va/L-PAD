@@ -41,6 +41,10 @@ pyinstaller --noconfirm --onefile --windowed --name "L-PAD_Security" --add-data 
 ```bash
 pip install -r requirements.txt
 ```
+3. Запустите программу:
+```bash
+python app.py
+```
 
 
 
